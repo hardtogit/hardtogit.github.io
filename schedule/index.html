@@ -621,8 +621,8 @@
 <!-- LOCAL: You can save these files to your site and update links -->
     
         
-      <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitment.browser.js"></script>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css">
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script type="text/javascript" src="/js/src/gitmit.browser.js?v=5.1.4"></script>
     
 <!-- END LOCAL -->
 
@@ -631,15 +631,17 @@
     
       <script type="text/javascript">
       function renderGitment(){
-        var gitment = new Gitment({
+        var gitment = new Gitmint({
             id: window.location.pathname,
             owner: 'hardtogit',
             repo: 'gitment-comments',
             
+            lang: "zh-Hans" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
             oauth: {
             
             
-                client_secret: '4b0695f61b847ce7ef99e5ad23734d0fa60f5d08',
+                proxy_gateway: 'https://bak.smalbox.club',
             
                 client_id: '22915ae0c1307d0bf98c'
             }});
